@@ -133,7 +133,7 @@ header nav ul li a:hover {
   margin: 50px 0px;
 }
 section {
-  margin: 150px 0px;
+  margin: 100px 0px;
 }
 .section-sub-title {
   font-family: "Poppins", serif;
@@ -165,7 +165,7 @@ section {
   justify-content: center;
 }
 .promotional-section {
-  margin: 0px 0px;
+  margin: 0px 0px 150px; /*element targeted for margin second time*/
 }
 .promotional-section div {
   gap: 30px;
@@ -503,3 +503,34 @@ div.btnBuyDiv {
   margin-top: 20px;
   color: #081420;
 }
+
+/* Footer */
+.footer-main-div {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-main-div h2 {
+  font-family: "Domine", serif;
+  font-size: 18px;
+  color: #2b2b2b;
+  border-bottom: 2px solid #2b2b2b;
+  margin: 15px 0px;
+  padding-bottom: 15px;
+}
+.footer-main-div ul li {
+  list-style: none;
+  margin: 15px 0px;
+}
+.footer-main-div ul li a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-family: "Domine", serif;
+}
+.footer-main-div ul li a:hover {
+  text-decoration: underline;
+}
+.footer-social-links li {
+  display: inline;
+}
+/*Stopped here, to continue to design footer*/
