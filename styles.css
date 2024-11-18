@@ -382,6 +382,7 @@ div.btnBuyDiv {
 /*Customer */
 
 .reviews-section {
+  margin-bottom: 0;
   padding: 80px 100px; /* Check this later */
   background-color: #f8f8ff;
 }
@@ -505,12 +506,16 @@ div.btnBuyDiv {
 }
 
 /* Footer */
+
+footer {
+  padding: 0px 100px;
+}
 .footer-main-div {
   display: flex;
   justify-content: space-around;
+  font-family: "Domine", serif;
 }
 .footer-main-div h2 {
-  font-family: "Domine", serif;
   font-size: 18px;
   color: #2b2b2b;
   border-bottom: 2px solid #2b2b2b;
@@ -525,12 +530,40 @@ div.btnBuyDiv {
   text-decoration: none;
   color: #2b2b2b;
   font-size: 16px;
-  font-family: "Domine", serif;
 }
 .footer-main-div ul li a:hover {
   text-decoration: underline;
 }
 .footer-social-links li {
   display: inline;
+}
+.footer-social-links i {
+  font-size: 18px;
+  color: #454545;
+  margin: 0px 10px 10px 0px;
+}
+.footer-main-div p {
+  font-size: 16px;
+  margin: 10px 0px;
+  color: #2b2b2b;
+}
+
+.footer-bottom-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-bottom-div hr {
+  margin-top: 20px;
+  width: 90%;
+  text-align: center;
+}
+.footer-bottom-div p {
+  color: #454545;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 /*Stopped here, to continue to design footer*/
