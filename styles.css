@@ -164,7 +164,12 @@ section {
 
 /* Promotional Section */
 
-.promotional-section,
+.promotional-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .promotion-item {
   display: flex;
   align-items: center;
@@ -177,7 +182,7 @@ section {
   gap: 30px;
 }
 .promotion-item {
-  flex: 1;
+  flex: 1 1 200px;
   padding: 0px 70px;
   max-width: 300px;
   position: relative;
@@ -270,6 +275,7 @@ section {
 .top-trending {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
   place-items: center;
   gap: 4em 1em;
   padding: 0px 20px;
@@ -373,6 +379,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  padding: 0px 50px;
   margin-bottom: 120px; /* Check this later */
 }
 .reviews-section-header > div {
@@ -694,6 +701,9 @@ footer {
     display: inline;
   }
   header nav {
+    display: none;
+  }
+  .promotional-section .promotion-item:last-child {
     display: none;
   }
   .top-trending {
