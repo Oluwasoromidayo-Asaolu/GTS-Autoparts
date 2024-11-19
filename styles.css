@@ -451,12 +451,15 @@ section {
 /* Individual customer review section */
 .reviews {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2em;
   margin-top: 50px;
 }
 .clients-review-card {
+  flex: 1 1 350px;
+  margin: 10px;
   background-color: #f8f8f8;
   border-radius: 8px;
   max-width: 300px;
