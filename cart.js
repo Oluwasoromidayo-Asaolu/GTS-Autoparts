@@ -45,7 +45,7 @@ function updateTotal() {
   totalPrice.innerHTML = `£${total.toFixed(2)}`;
 }
 
-totalPrice.innerHTML = `£${total}`;
+totalPrice.innerHTML = `£${total.toFixed(2)}`;
 
 document.querySelectorAll(".quantity-input").forEach((input) => {
   input.addEventListener("input", updateTotal);
