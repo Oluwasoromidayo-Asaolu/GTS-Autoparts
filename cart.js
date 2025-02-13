@@ -6,7 +6,8 @@ let totalPrice = document.querySelector(".total-price");
 let cartSummary = document.querySelector(".cart-summary");
 let total = 0;
 
-//
+cartContainer.style.display = "none";
+cartSummary.style.display = "none";
 //Creating the structure for each product in the cart
 cartItems.forEach((item) => {
   const itemCard = `
