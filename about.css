@@ -1,0 +1,202 @@
+.about-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/about_banner.jpg");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about-hero-text {
+  font-family: "Domine", serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.about-hero-text h1 {
+  font-size: 100px;
+  margin: 10px 0px;
+}
+.about-hero-text p {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.about-hero-text button {
+  background-color: #ff914d;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  height: 60px;
+  width: fit-content;
+  font-family: "Poppins";
+  font-size: 18px;
+  padding: 10px 30px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.about-hero-text button:hover {
+  background-color: #e28145;
+}
+.about-hero-text button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* About Us Section */
+
+.about-us-hero {
+  margin-top: 100px;
+  padding: 0px 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.about-us-hero img {
+  width: 100%;
+}
+
+.about-sub-title {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #6001d3;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.about-title {
+  font-family: "Domine", serif;
+  font-size: 50px;
+  color: #081420;
+  margin-bottom: 20px;
+}
+
+.about-us-hero p {
+  color: #081420;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+}
+
+/* About Card */
+.about-us-services {
+  margin: 50px 0;
+  padding: 0px 200px;
+}
+.about-services-card {
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 0px;
+  text-wrap: wrap;
+}
+.about-services-image {
+  width: 100%;
+}
+.about-services-card h1 {
+  font-family: "Domine", serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.about-services-card p {
+  padding: 10px 10px 0px 10px;
+  font-family: "Poppins", serif;
+  font-size: 13px;
+}
+.about-services {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+.about-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 300px;
+}
+footer {
+  margin-top: 100px;
+  padding-top: 30px;
+  background-color: #f8f8ff;
+}
+
+/*Responsive Design*/
+@media (max-width: 1200px) {
+  .about-hero-text h1 {
+    font-size: 80px;
+  }
+  .about-hero-text p {
+    font-size: 30px;
+  }
+  .about-us-hero {
+    padding: 0px 100px;
+  }
+  .about-title {
+    font-size: 40px;
+  }
+  .about-us-services {
+    padding: 0px 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-us-hero {
+    flex-direction: column;
+  }
+  .about-hero-text h1 {
+    font-size: 70px;
+  }
+  .about-hero-text p {
+    font-size: 25px;
+  }
+  .about-us-hero p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-us-hero {
+    flex-direction: column;
+  }
+  .about-us-hero {
+    padding: 0px 100px;
+  }
+  .about-us-services {
+    padding: 0px 100px;
+  }
+  .about-hero-text h1 {
+    font-size: 60px;
+  }
+  .about-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .about-title {
+    font-size: 30px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us-hero {
+    padding: 0px 50px;
+    margin-top: 70px;
+  }
+  .about-us-services {
+    padding: 0px 30px;
+  }
+  .about-text h1 {
+    font-size: 17px;
+  }
+  .about-text p {
+    font-size: 13px;
+  }
+  
+}

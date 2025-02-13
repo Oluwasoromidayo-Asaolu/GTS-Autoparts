@@ -1,0 +1,1033 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+/* Still have some work to do here in the pre-header sections (responsiveness) and hamburger too (interactivity) */
+.pre-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff914d;
+  color: rgb(249, 242, 242);
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  word-spacing: 5px;
+  position: relative;
+  margin: 0;
+}
+.pre-header-div {
+  position: relative;
+}
+.pre-header-div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  right: -50%;
+  transform: translateY(-50%);
+}
+.pre-header-socials ul li {
+  display: inline;
+  margin: 0 5px;
+}
+.pre-header-socials ul li a {
+  text-decoration: none;
+  color: rgb(250, 249, 249);
+  opacity: 0.9;
+}
+.pre-header-socials ul li a:hover {
+  color: white;
+  transition: ease-in;
+  opacity: 1;
+}
+.pre-header2 {
+  display: none;
+}
+.pre-header1 {
+  display: flex;
+}
+
+/*Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);
+}
+.logo-img {
+  width: 200px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Domine", serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+  padding: 5px;
+}
+header nav ul li a:hover {
+  color: rgb(229, 107, 24);
+  border-bottom: 2px solid rgb(229, 107, 24);
+  transition: 0.2s ease; /* border-bottom looks weird with the transition set */
+}
+.search-cart-user {
+  display: flex;
+  align-items: center;
+}
+.cart-user {
+  display: flex;
+  align-items: center;
+}
+
+.cart,
+.user {
+  font-size: 1.3rem;
+  color: rgb(87, 87, 87);
+  margin: 0px 15px;
+}
+
+.cart:hover,
+.user:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  color: #454545;
+  font-size: 40px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header {
+    transition: transform 0.3s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .hamburger i {
+    font-size: 1.8rem;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #e8983c;
+    width: 50%;
+    padding: 20px 0;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    transform: translateY(-100%);
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  header nav ul.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  header nav ul li {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    display: block;
+    padding: 10px;
+  }
+
+  header nav ul li a:hover {
+    background-color: #ff914d;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  header nav ul li i {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.hero img {
+  width: 80%;
+  margin: 30px 0px 0px 0px;
+}
+
+/* Main Section */
+
+.main-section {
+  margin: 50px 0px;
+}
+section {
+  margin: 100px 0px;
+}
+.section-sub-title {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #6001d3;
+  font-size: 14px;
+  text-align: center;
+}
+.section-title {
+  font-family: "Domine", serif;
+  font-size: 50px;
+  text-align: center;
+  color: #081420;
+}
+.section-pre-text {
+  text-align: center;
+  padding: 0px 200px;
+  color: #081420;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+}
+
+/* Promotional Section */
+
+.promotional-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.promotion-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promotional-section {
+  margin: 0px 0px 150px; /*element targeted for margin second time*/
+}
+.promotional-section div {
+  gap: 30px;
+}
+.promotion-item {
+  flex: 1 1 200px;
+  padding: 0px 70px;
+  max-width: 300px;
+  position: relative;
+}
+
+.promotion-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background-color: rgb(204, 204, 204);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.promotion-icon {
+  color: #454545;
+  font-size: 60px;
+}
+.promotion-item h2 {
+  font-family: "Domine", serif;
+  font-size: 20px;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+}
+.promotion-item p {
+  color: #081420;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* Featured Products Section */
+
+.featured-products-section {
+  padding: 0 100px;
+}
+.product-card {
+  max-width: 250px;
+  max-height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px 20px;
+  text-wrap: wrap;
+  margin: 0px 10px;
+}
+.product-image {
+  width: 150px;
+  height: 110px;
+}
+
+.product-card .product-title {
+  color: #4d4d4d;
+  font-family: "Domine", serif;
+  font-size: 16px;
+  text-align: justify;
+  padding: 0px 20px;
+}
+
+.product-card .product-price {
+  font-size: 17px;
+  text-align: justify;
+  padding: 0px 20px;
+  margin: 5px 0px 10px 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #525252;
+}
+.product-stats {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0px 20px;
+  margin: 5px 0px;
+  color: #6a6969;
+  font-family: "Poppins", serif;
+  font-size: 13px;
+}
+.product-stats span {
+  margin-right: 13px;
+}
+.fa-star {
+  color: #fcb125;
+}
+.card-hr {
+  width: 90%;
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid #8b8888;
+}
+.top-trending {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  place-items: center;
+  gap: 4em 1em;
+  padding: 0px 20px;
+  margin: 75px 0px;
+}
+.top-trending-cta a {
+  color: white;
+  text-decoration: none;
+}
+.addToCartBtn {
+  font-size: 15px;
+  text-align: center;
+  background-color: #ff914d;
+  color: white;
+  outline: none;
+  border: none;
+  width: 240px;
+  height: 38px;
+  padding: 8px 14px;
+  margin: 5px 0px 5px 0px;
+  font-family: "Domine", serif;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);
+}
+.addToCartBtn:hover {
+  cursor: pointer;
+  background-color: #f48c4c;
+}
+
+.cart-message {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c689e9f7;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cart-message.show {
+  opacity: 1;
+}
+
+.cart-message.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.top-trending-cta {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+.top-trending-cta button {
+  background-color: #6001d3;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  min-width: 150px;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+/* hr line code */
+
+.divider {
+  display: flex;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  flex: 1;
+}
+
+.line {
+  align-items: center;
+  margin: 0.8em -1em;
+}
+
+.line:before,
+.line:after {
+  content: "";
+  height: 2px;
+  margin: 0 1em;
+}
+
+.razor:before,
+.razor:after {
+  content: "";
+  box-shadow: 0 0.5px 0 rgb(92, 85, 85);
+  border-bottom: 1px solid rgb(220, 216, 216);
+}
+
+/*Customer */
+
+.reviews-section {
+  margin-bottom: 0;
+  padding: 90px 50px; /* Check this later */
+  background-color: #f8f8ff;
+}
+.reviews-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 50px;
+  margin-bottom: 120px; /* Check this later */
+}
+.reviews-section-header > div {
+  flex: 1 1 350px;
+  margin: 10px;
+}
+.reviews-section-header > div:first-child {
+  position: relative;
+  width: 40%;
+  padding-right: 20px;
+}
+.reviews-section-header > div:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(207, 205, 205);
+}
+.reviews-section-title {
+  font-family: "Domine", serif;
+  font-size: 60px;
+  color: #081420;
+  margin: 20px 0px 10px;
+  width: 90%;
+}
+.reviews-section-sub-title {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #6001d3;
+  font-size: 14px;
+}
+.reviews-section-pre-text {
+  color: #081420;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  width: 90%;
+  padding: 10px;
+}
+.rating-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.average-customer-rating-div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin: -60px 20px 0px; /* Negative margin? I don't really like them. Check this later */
+}
+.average-customer-rating {
+  font-family: "Poppins", serif;
+  font-size: 200px;
+  color: #2b2b2b;
+}
+.average-customer-rating-sub-text-h2 {
+  font-family: "Poppins", serif;
+  font-size: 30px;
+  color: #2b2b2b;
+  text-align: center;
+}
+.average-customer-rating-sub-text-h4 {
+  font-family: "Domine", serif;
+  font-size: 15px;
+  color: #2b2b2b;
+}
+.average-review-rating-stars {
+  font-size: 40px;
+  margin-top: -100px;
+}
+
+/* Individual customer review section */
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 50px;
+}
+.clients-review-card {
+  flex: 1 1 350px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  max-width: 300px;
+  min-height: 250px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(113, 113, 113, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-wrap: wrap;
+}
+.customer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.customer-info h3 {
+  font-family: "Domine", serif;
+  font-size: 18px;
+}
+.rating {
+  display: flex;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.review-text {
+  font-family: "Poppins", serif;
+  font-weight: 450;
+  color: #081420;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.customer-location {
+  float: right;
+  margin-top: 20px;
+  color: #081420;
+}
+/* Footer */
+
+footer {
+  padding: 0px 100px;
+}
+
+.footer-main-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Domine", serif;
+}
+.footer-main-div > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.footer-main-div h2 {
+  font-size: 18px;
+  color: #2b2b2b;
+  border-bottom: 2px solid #2b2b2b;
+  margin: 15px 0px;
+  padding-bottom: 15px;
+}
+.footer-main-div ul li {
+  list-style: none;
+  margin: 15px 0px;
+}
+.footer-main-div ul li a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 16px;
+}
+.footer-main-div ul li a:hover {
+  text-decoration: underline;
+}
+.footer-social-links li {
+  display: inline;
+}
+.footer-social-links i {
+  font-size: 18px;
+  color: #454545;
+  margin: 0px 10px 10px 0px;
+}
+.footer-main-div p {
+  font-size: 16px;
+  margin: 10px 0px;
+  color: #2b2b2b;
+}
+
+.footer-bottom-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-bottom-div hr {
+  margin-top: 20px;
+  width: 90%;
+  text-align: center;
+}
+.footer-bottom-div p {
+  color: #454545;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/*Responsive Design*/
+
+@media (max-width: 1300px) {
+  .top-trending {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .logo-img {
+    width: 150px;
+  }
+  header nav {
+    font-size: 0.85rem;
+  }
+  .search {
+    padding: 12px;
+  }
+  .search-input {
+    font-size: 12px;
+    width: 150px;
+    height: 10px;
+  }
+  .search-icon {
+    font-size: 12px;
+  }
+  .pre-header {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .pre-header-div {
+    padding: 0 8px;
+  }
+  .promotional-section {
+    padding: 0px 50px;
+  }
+  .promotional-section div {
+    gap: 25px;
+  }
+  .promotion-item {
+    padding: 0px 50px;
+    max-width: fit-content;
+  }
+  .promotion-icon {
+    font-size: 40px;
+  }
+  .promotion-item h2 {
+    font-size: 16px;
+  }
+  .promotion-item p {
+    font-size: 13px;
+  }
+  .section-title {
+    font-size: 45px;
+  }
+
+  /*Featured Products Section */
+
+  .featured-products-section {
+    padding: 0 80px;
+  }
+  .top-trending {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Customer Review Section */
+
+  .reviews-section {
+    padding: 80px 50px; /* Check this later */
+  }
+  .reviews-section-header {
+    gap: 30px;
+  }
+  .reviews-section-title {
+    font-size: 50px;
+  }
+  .average-customer-rating {
+    font-size: 180px;
+  }
+  .average-customer-rating-sub-text-h2 {
+    font-size: 28px;
+  }
+  .average-review-rating-stars {
+    font-size: 38px;
+    margin-top: -95px;
+  }
+
+  /* Individual customer review section */
+
+  .clients-review-card {
+    max-width: 250px;
+    min-height: 200px;
+  }
+  .customer-img {
+    width: 45px;
+    height: 45px;
+  }
+  .customer-info h3 {
+    font-size: 15px;
+  }
+  .rating {
+    font-size: 12px;
+  }
+  .review-text {
+    font-size: 12px;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero img {
+    margin: 0px;
+  }
+  .hero img {
+    width: 100%;
+  }
+  .promotional-section .promotion-item:last-child {
+    display: none;
+  }
+  .top-trending {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-pre-text {
+    padding: 0px 50px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    color: #454545;
+    font-size: 35px;
+  }
+  .promotional-section {
+    margin: 0px;
+  }
+  .pre-header {
+    padding: 5px 10px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .pre-header-div {
+    margin-bottom: 5px;
+  }
+  .pre-header-div:not(:last-child)::after {
+    display: none;
+  }
+  .cart,
+  .user {
+    font-size: 1.2rem;
+    color: rgb(217, 216, 216);
+  }
+}
+
+@media (max-width: 720px) {
+  .hamburger {
+    font-size: 36px;
+  }
+  .promotion-item h2 {
+    font-size: 14px;
+  }
+  .promotion-item p {
+    font-size: 12px;
+  }
+  .section-title {
+    font-size: 40px;
+    margin: 20px -45px;
+  }
+  .section-pre-text {
+    font-size: 12px;
+    padding: 0px 40px;
+  }
+  /* Card resize */
+
+  .product-card {
+    min-width: 220px;
+    max-height: 250px;
+  }
+  .product-image {
+    width: 100px;
+  }
+  .product-card .product-title {
+    font-size: 16px;
+  }
+  .product-card .product-price {
+    font-size: 16px;
+  }
+  .addToCartBtn {
+    width: 200px;
+    height: 35px;
+  }
+  .reviews-section {
+    padding: 80px 20px;
+  }
+  .reviews-section-title {
+    font-size: 40px;
+  }
+  .reviews-section-pre-text {
+    font-size: 13px;
+  }
+  .average-customer-rating {
+    font-size: 150px;
+  }
+  .average-review-rating-stars {
+    font-size: 36px;
+    margin-top: -80px;
+  }
+  .average-customer-rating-sub-text-h2 {
+    font-size: 24px;
+  }
+  .average-customer-rating-sub-text-h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .promotional-section {
+    padding: 0px 20px;
+  }
+  .promotional-section div {
+    gap: 20px;
+  }
+  .promotion-item {
+    padding: 0px 20px;
+  }
+  .promotion-icon {
+    font-size: 30px;
+  }
+  .promotion-item h2 {
+    font-size: 15px;
+  }
+  .promotion-item p {
+    font-size: 12px;
+  }
+  .promotional-section {
+    flex-wrap: nowrap;
+  }
+  .promotional-section > .promotion-item:nth-child(2)::after {
+    content: none;
+  }
+}
+@media (max-width: 675px) {
+  .pre-header {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .pre-header-div {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .pre-header-div:not(:last-child)::after {
+    display: none; /* Hide the separators for smaller screens */
+  }
+  header {
+    padding: 0 20px 0 10px;
+    justify-content: space-between;
+  }
+  .logo-img {
+    width: 120px;
+  }
+  .hamburger {
+    font-size: 32px;
+  }
+  .product-card .product-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .featured-products-section {
+    padding: 0 40px;
+    margin-top: 70px;
+  }
+  .section-pre-text {
+    padding: 0px 0px;
+  }
+  .top-trending {
+    grid-template-columns: 1fr;
+  }
+  .pre-header1 {
+    display: none;
+  }
+  .pre-header2 {
+    display: flex;
+  }
+}
+
+@media (max-width: 515px) {
+  .section-title {
+    font-size: 35px;
+  }
+  .reviews-section {
+    padding: 50px 0px; /* Check this later */
+  }
+  .reviews-section-title {
+    font-size: 36px;
+  }
+  .reviews-section-pre-text {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 430px) {
+  .promotional-section {
+    padding: 0px 10px;
+  }
+  .promotion-item {
+    padding: 0px 10px;
+  }
+  .section-title {
+    font-size: 30px;
+    margin: 15px -45px;
+  }
+  .reviews-section {
+    padding: 20px 10px 80px;
+  }
+  .reviews-section-header {
+    padding: 30px;
+  }
+  .reviews-section-pre-text {
+    color: #081420;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .reviews-section-header > div:first-child::after {
+    display: none;
+    content: none;
+  }
+  .average-customer-rating {
+    font-size: 130px;
+  }
+  .average-review-rating-stars {
+    font-size: 30px;
+  }
+  .average-review-rating-stars {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 405px) {
+  .section-title {
+    text-align: start;
+    font-size: 25px;
+  }
+  .section-sub-title {
+    font-size: 12px;
+  }
+  .section-pre-text {
+    font-size: 11px;
+  }
+  .reviews-section-header {
+    margin-bottom: 50px;
+  }
+  .clients-review-card {
+    max-width: 210px;
+    padding-bottom: 20px;
+  }
+  .customer-img {
+    width: 45px;
+    height: 45px;
+  }
+  .customer-info h3 {
+    font-size: 16px;
+  }
+
+  .customer-location {
+    font-size: 14px;
+  }
+}
